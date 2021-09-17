@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>css form design</title>
+         <style>
+             .myform{
+                 width:520px;
+                 height:445px;
+                 margin:150px auto;
+                 background-image: -webkit-linear-gradient(top,#3b3b3b,#373737);
+                 border-radius: 8px;
+                 font-family:Arial, Helvetica, sans-serif;
+             }
+             .myform > .cacc{
+                 height:77px;
+                 text-align:center;
+                 line-height:77px;
+                 color:#fff;
+                 font-size:2em;
+                 border-bottom: 1px solid #1b1b1b;
+                 text-shadow: 0px -2px 1px rgba(66, 44, 44, 0.5);
+                 margin-bottom:41px;
+             }
+             .myform > div > input {
+                 display:block;
+                 width:92%;
+                 height:38px;
+                 border-radius:20px;
+                 margin:10px auto;
+                 background-image:-webkit-linear-gradient(top,#b1b1b1,#d7d7d7);
+                 border:none;
+                 box-shadow: 0px 1px 1px 1px #5b595a;
+                 padding-left:43px;
+                 font-weight: bold;
+             }
+             .tnc{
+                 font-size:1em !important;
+                 text-align:left !important;
+                 color:#fff;
+             }
+             .box{
+                 padding:0px 20px;
+             }
+             .box > input:focus{
+                 outline: none;
+             }
+             .tnc a{
+                 color:#6a7620;
+             }
+             input[type="submit"]{
+                 width:250px;
+                 height:48px;
+                 float:right;
+                 border:none;
+                 border-radius:50px;
+                 color:#fff;
+                 font-size:1.5em;
+                 margin-right:20px;
+                 background-image: -webkit-linear-gradient(top,#909419,#717c00);
+                 text-shadow:0px -2px 1px rgba(0,0,0,0.5);
+                 box-shadow: 0px -1px 0px 0px #b4bd2c;
+             }
+         </style>
+    </head>
+    <body>
+        <form class="myform">
+            <div class="cacc">Create an Account</div>
+        <div class="box">
+            <input type="text" name="fname" value="" placeholder="Name">
+            <input type="number" name="phonenumber" value="" placeholder="Phone number">
+            <input type="email" name="email" value="" placeholder="Email">
+            <input type="password" name="password" value="" placeholder="Password">
+            <p class="tnc" ><input type="checkbox" name="tnc" value="agree">I agree to the <a  href="#"> Terms and Conditions</a> and <a href="#">Privacy Policy</a></p>
+        </div>
+        <input type="submit" name="submit" value="Create Account">
+        </form>
+    </body>
+    </html>
